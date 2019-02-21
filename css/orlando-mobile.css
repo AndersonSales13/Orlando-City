@@ -1,0 +1,361 @@
+/* Definição das Fontes */
+@font-face {
+	font-family: 'OpenSans';
+	src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+	
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+	
+}
+
+/* Tamanho para tablets */
+
+@media only screen and (max-width: 768px) {
+	.header-black ul {
+		display: none;
+	}
+
+
+
+}
+
+/* Tamanho para Smartphones */
+
+@media only screen and (max-width: 460px) {
+	.header-black ul, #menu {
+		display: none;
+	}/* Deixando os Icones dos Times da American League invisíveis */
+	
+	#logotipo {
+		left: 32%;
+		transition: 1s;
+	}/* Redimensionando o Logotipo */
+	
+	#btn-bars {
+		font-size: 22px;
+		color: #fff;
+		background:none;
+		border:none;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		display: block;
+		outline: none;
+	}/* Abrir o Menu */ 
+	#btn-search {
+		font-size: 22px;
+		color: #fff;
+		background:none;
+		border:none;
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		display: block;
+		outline: none;
+	}/* Abrir a Barra de Pesquisa */
+
+	header .header-black {
+		position: fixed;
+		top: 0;
+		width: 100%; 
+	}
+
+	header #menu-mobile {
+		position: fixed;
+		background: #fff;
+		top: 40px;
+		width: 80%;
+		height: 100%;
+		left: -80%;
+		transition: 1s;
+		display: block;
+	}
+
+	header.open-menu #menu-mobile {
+		left: 0px;
+	}
+
+	header.open-menu #logotipo {
+		width: 66px;
+		height: 76px;
+		left: calc(40% - 30px);
+		top: 50px;
+		position: fixed;
+		transform: rotate(360deg);
+	}
+
+	header .menu-opc {
+		list-style: none;
+		text-align: center;
+		margin: 0px 20px;
+    	padding: 0;
+    	margin-top: 105px;
+	}
+
+	header .menu-opc li {
+		padding: 30px 0px;
+		border-top: 1px solid #CCCCCC;
+	}
+
+	header .menu-opc li:last-child {
+		border-bottom: 1px solid #CCCCCC;
+	}
+
+	header .menu-opc a {
+		color: #633392;
+		font-family: "OpenSans";
+		font-size: 16px;	
+		font-weight: bolder;
+		
+	}
+	
+	header .btn-menu-close {
+		text-align: left;
+		color: #fff;
+		font-size: 22px;
+		background: none;
+		border: none;
+		background-color: #633492;
+		width: 100%;
+		height: 40px;
+		outline: none;
+		position: absolute;
+		bottom: 40px;
+	}
+
+	header.open-menu .menu-mobile-mask {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .5);
+		display: block;
+	}
+
+	header .pesquisar {
+		width: 90%;
+	    height: 5.5%;
+	    position: fixed;
+	    left: 12%;
+	    top: -40px;
+	    display: block;
+	}
+
+	header #btn-search-input { 
+		font-size: 22px;
+		color: #fff;
+		background:none;
+		border:none;
+		position: absolute;
+		top: 4px;
+		right: 12px;
+		display: block;
+		outline: none;
+	}
+
+	header.open-search #btn-search {
+		z-index: -1;
+	}
+
+	header #input-menu-search {
+		background: none;
+	    border: none;
+	    background-color: #000;
+	    width: 90%;
+	    height: 5.5%;
+	    position: fixed;
+	    left: 12%;
+	    color: #fff;
+	    font-size: 1.4em;
+	    top: -40px;
+	    outline: none;
+	}
+
+	header.open-search #input-menu-search, .open-search .pesquisar {
+		top: 0;
+	}
+
+	header.open-search #logotipo {
+		top: 40px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	section #banner {
+		height: 277px;
+    	background-size: cover;
+    	background-position: -56px -25px;
+	}
+
+	#banner h1 {
+		top: 151px;
+    	font-size: 48px;
+    	margin-left: 72px;
+	}
+
+	#banner h1 small {
+		line-height: 28px;
+    	margin-left: 9px;
+    	font-size: 22px;
+	}
+
+	#news h2 {
+		font-size: 32px;
+		margin-top: 57px;
+	}
+
+	#news hr {
+		border: #FDE192 solid 2px;
+		margin-bottom: -25px;
+	}
+
+	#news .thumbnails .item-inner {
+		text-align: center;
+		width: 90%;
+	}
+
+	.owl-theme .owl-nav, .owl-theme .owl-dots {
+		display: none;
+	}
+
+	#btn-owl-prev, #btn-owl-next {
+		display: block;
+		background: none;
+		border: none;
+		font-size: 48px;
+		color: #5E2699;
+		position: absolute;
+		top: 176px;
+		z-index: 1;
+		outline: none;
+	}
+
+	#btn-owl-next {
+		right: 15px;
+	}
+
+	.item {
+		margin-left: 60px;
+	}
+
+	#estatisticas {
+		height: 600px;
+	}
+
+	#estatisticas p {
+		margin-top: 10px;
+    	margin-bottom: 65px;
+	}
+	
+	#call-to-action {
+		margin-top: -40px;
+	}
+	
+	#call-to-action h2 {
+		font-size: 32px;
+    	margin-left: 10px;
+    	margin-right: 10px;
+	}
+
+	#call-to-action p {
+		margin-top: 37px;
+    	margin-bottom: 37px;
+    	margin-right: 20px;
+    	margin-left: 20px;
+	}
+
+	#call-to-action .btn {
+		width: 164px;
+	}
+
+	footer {
+		margin-top: 59px;
+	}
+
+	footer .row-superior {
+		height: 157px;
+		position: relative;
+	}
+	
+	footer .btn-mob {
+		position: relative;
+    	top: 20px;
+    	display: block;
+	}
+
+	footer .btn {
+		width: 170px;
+		height: 44px;
+		background: #11171D;
+		border: none;
+		border-radius: 0;
+		margin: 0 auto;
+		color: #999999;
+		font-family: "OpenSans";
+		font-size: 14px;
+		text-align: left;
+		padding-left: 35px;
+	}
+
+	footer .btn i {
+		font-size: 20px;
+		position: relative;
+   	 	right: 15px;
+	}
+
+	footer .btn:last-child {
+		float: right;	
+	}
+
+	footer .row-socials {
+		position: absolute;
+		top: 80px;
+		left: 3px;
+	}
+
+	footer .social i {
+		font-size: 27px;
+		margin-top: 10px;
+	}
+
+	footer .social {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	footer .pg-up {
+		display: inline-block;
+	}
+	
+	footer .copyright-centralizar {
+		margin: 0px 9px;
+		line-height: 21px;
+
+	}
+	footer .row-inferior .pull-right {
+		margin-right: 5px;
+	}
+	footer .row-inferior p:first-child {
+		margin-top: 2px;
+	}
+
+}

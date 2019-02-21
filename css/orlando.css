@@ -1,0 +1,590 @@
+/* Definição das Fontes */
+@font-face {
+	font-family: 'OpenSans';
+	src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+	
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+	
+}
+
+
+/* Elaboração do Cabeçalho */
+header {
+	width: 100%;
+	height: 150px;
+	background-color: rgba(94, 41, 154, .9);
+	position: relative;
+	z-index: 2;
+}
+
+header .container {
+	position: relative;
+}
+
+header .header-black li {
+	background-image: url(../img/clubs.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 4px;
+}
+
+
+header .header-black li.club-01 {
+	background-position: 0px 0px;
+}
+header .header-black li.club-02 {
+	background-position: -48px 0px;
+}
+header .header-black li.club-03 {
+	background-position: -94px 0px;
+}
+header .header-black li.club-04 {
+	background-position: -139px 0px;
+}
+header .header-black li.club-05 {
+	background-position: -189px 0px;
+}
+header .header-black li.club-06 {
+	background-position: -239px 0px;
+}
+header .header-black li.club-07 {
+	background-position: -288px 0px;
+}
+header .header-black li.club-08 {
+	background-position: -335px 0px;
+}
+header .header-black li.club-09 {
+	background-position: -379px 0px;
+}
+header .header-black li.club-10 {
+	background-position: -429px 0px;
+}
+header .header-black li.club-11 {
+	background-position: -479px 0px;
+}
+header .header-black li.club-12 {
+	background-position: -528px 0px;
+}
+header .header-black li.club-13 {
+	background-position: -578px 0px;
+}
+header .header-black li.club-14 {
+	background-position: -628px 0px;
+}
+header .header-black li.club-15 {
+	background-position: -674px 0px;
+}
+header .header-black li.club-16 {
+	background-position: -718px 0px;
+}
+header .header-black li.club-17 {
+	background-position: -761px 0px;
+}
+header .header-black li.club-18 {
+	background-position: -806px 0px;
+}
+header .header-black li.club-19 {
+	background-position: -855px 0px;
+}
+header .header-black li.club-20 {
+	background-position: -901px 0px;
+}
+header .header-black li.club-21 {
+	background-position: -948px 0px;
+}
+header .header-black li.club-22 {
+	background-position: -997px 0px;
+}
+
+
+header .header-black li a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+header .header-black {
+	height: 40px;
+	background-color: #000;
+}
+
+
+header #logotipo {
+	position: absolute;
+	top: 20px;
+	z-index: 3;
+}
+
+#menu {
+	margin: 14px 0px;
+}
+
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans-Light";
+}
+
+#menu li a {
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 25px;
+}
+
+#menu li.search {
+	width: 182px;
+	transition-duration: 1s;
+	/* transition-timing-function: cubic-bezier(1, -.91, .91, 1); */
+}
+#menu li.search input {
+	background-color: #5C2D90;
+	color: #fff;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	top: 8px;
+}
+
+#menu li.search ::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .6);
+}
+
+#menu li.search button {
+	background: none;
+	border: none;
+	position: absolute;
+    right: 0px;
+    bottom: 6px;
+}
+
+#menu li.search button i {
+	font-size: 15px;
+	color: rgba(255, 255, 255, .5);
+}
+
+#menu li.search .input-group {
+	top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Configurando o Banner */
+section #banner {
+	width: 100%;
+	height: 728px;
+	position: relative;
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	top: -110px;
+	background-position: 0px -120px;
+}
+
+#banner h1 {
+	font-family: "OpenSans-Light";	
+	position: relative;
+	top: 344px;
+	color: #fff;
+	font-size: 92px; 
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .65);
+	margin-top: 0px;
+	margin-left: 100px;
+	transition: 1s;
+}
+#banner h1 small {
+	font-family: "OpenSans";
+	font-size: 32px;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Configurando as Notícias */
+#news {
+	position: relative;
+	bottom: 145px;
+}
+#news h2 {
+	font-family: "OpenSans-Light";
+	font-size: 48px;
+	color: #5E2899;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+#news hr {
+	width: 200px;
+	border: #FDE192 solid 3px;
+	margin-top: 10px;
+}
+#news .thumbnails {
+	margin-top: 35px;
+}
+#news .thumbnails h3 {
+	font-family: "OpenSans";
+	font-weight: bold;
+	font-size: 18px;
+	color: #5E2899;
+	margin-bottom: 2px
+}
+#news .thumbnails time {
+	font-family: "OpenSans";
+	font-size: 18px;
+	color: #A7A7A7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Configurando as Estatísticas */
+#estatisticas {
+	width: 100%;
+	height: 200px;
+	background-color: #5E299A;
+	text-align: center;
+	position: relative;
+    bottom: 82px;
+}
+#estatisticas p {
+	font-family: "OpenSans-Light";
+	font-size: 64px;
+	color: #FDE192;
+    position: relative;
+	top: 30px;
+}
+#estatisticas p small {
+	font-size: 24px;
+	color: #fff;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Configurando o Call-to-Action */
+#call-to-action h2 {
+	font-family: "OpenSans-Light";
+	font-size: 48px; 
+	color: #5E2899;
+}
+#call-to-action hr {
+	width: 200px;
+	border: #FDE192 solid 3px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+#call-to-action p {
+	text-align: center;
+	font-size: 14px;
+	color: #656565;
+	margin-top: 60px;
+	margin-bottom: 43px;
+}
+#call-to-action .btn {
+	min-width: 164px;
+	height: 44px;
+	border-radius: 0;
+	line-height: 35px;
+}
+#call-to-action .btn-roxo {
+	color: #fff;
+    background-color: #5E299A;
+    border-color: #5E299A;
+}
+#call-to-action .btn-amarelo {
+	color: #000;
+    background-color: #FDE192;
+    border-color: #FDE192;
+}
+#call-to-action .row-max-400 {
+	margin: 0 auto;
+	max-width: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Configurando o Rodapé */
+footer {
+	margin-top: 111px;
+	padding-right: 0px;
+}
+footer .row {
+	margin-left: 0px;
+}
+footer .row-superior {
+	width: 100%;
+	height: 200px;
+	background-color: #171F26;
+}
+footer .row-inferior {
+	width: 100%;
+	height: 60px;
+	background-color: #11171D;
+	border-top: solid 1px #242D37;
+	line-height: 59px;
+}
+footer .row-inferior .pull-left {
+	font-size: 14px;
+	color: #666666;
+}
+footer .row-inferior .pull-right {
+	font-family: "OpenSans";
+	font-weight: bold;
+	font-size: 14px;
+	color: #623291;
+}
+footer .row-inferior p {
+	margin-bottom: 0px;
+}
+footer .logotipo {
+	margin-top: 28px;
+}
+footer h4 {
+	font-family: "OpenSans";
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 42px;
+	margin-bottom: 22px;
+	padding-bottom: 17px;
+	border-bottom: 1px #242D37 solid;
+}
+footer .col-popular-posts h5 {
+	font-family: Arial;
+	font-size: 14px;
+	color: #666666;
+	margin-bottom: 2px;
+}
+footer .col-popular-posts time {
+	font-family: Arial;
+	font-size: 14px;
+	color: #FDE192;
+}
+footer .col-links li {
+	margin-bottom: 10px;
+}
+footer .col-links a {
+	color: #fff;
+	font-family: "OpenSans";
+	font-size: 14px;
+}
+footer .col-links a i {
+	margin-right: 9px;
+}
+footer .col-get-in-touch h4 {
+	font-family: "OpenSans";
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 42px;
+	margin-bottom: 14px;
+	padding-bottom: 17px;
+	border-bottom: 1px #242D37 solid;
+}
+footer .col-get-in-touch i {
+	color: #9B9B9B;
+	font-size: 20px;
+}
+footer .col-get-in-touch address {
+	font-size: 14px;
+	color: #666666;
+	font-family: "OpenSans";
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+footer .col-get-in-touch address span {
+	display: inline-block;
+}
+footer .col-get-in-touch address i {
+	margin-right: 8px;
+    position: relative;
+    bottom: 8px;
+}
+footer .col-get-in-touch p {
+	margin: 0px 0px 7px;
+}
+footer .col-get-in-touch p a {
+	font-size: 14px;
+	color: #666666;
+	font-family: "OpenSans";
+	line-height: 18px;
+}
+footer .col-get-in-touch p i {
+	position: relative;
+    bottom: -2px;
+    margin-right: 3px;
+}
+footer .social {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #9B9B9B;
+	border-radius: 15px;
+	display: inline-block;
+	margin: 0px 3px;
+}
+footer .social i {
+	font-size: 16px;
+	color: #999999;
+	position: relative;
+	top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Estabelendo Efeitos jQuery */
+#banner.efeito h1 {
+	font-size: 10em;
+	color: red;
+}
+
+#menu li.search.efeitoSearch {
+	width: 300px;
+}
+#menu li.search.efeitoSearch input {
+	width: 300px;
+}
+
+
+
+
+/* Owl_Carousel */
+#news .thumbnails .item-inner {
+	padding: 10px;
+}
+#news .thumbnails .item-inner img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+												/* VIDEOS.html */
+
+#playlist {
+	position: relative;
+}
+#playlist h2 {
+	font-family: "OpenSans-Light";
+	font-size: 48px;
+	color: #5E2899;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+#playlist hr {
+	width: 200px;
+	border: #FDE192 solid 3px;
+	margin-top: 10px;
+}
+#playlist .list-videos {
+	margin-top: 35px;
+}
+#playlist .list-videos h3 {
+	font-family: "OpenSans";
+	font-weight: bold;
+	font-size: 18px;
+	color: #5E2899;
+	margin-bottom: 2px
+}
+
+#call-to-action video {
+	width: 60%;
+}
+/* OWL_Carousel */
+#playlist .list-videos .item-inner {
+	padding: 10px;
+}
+#playlist .list-videos .item-inner img {
+	width: 100%;
+}
+
+
+
+
+											/* Alterações do Mobile */
+
+#btn-bars, #btn-search, #btn-owl-prev, #btn-owl-next {
+	display: none;
+}
+
+.pg-up, .btn-mob {
+	display: none;
+}
+
+.menu-mobile-mask, #menu-mobile, .pesquisar {
+	display: none;
+}
